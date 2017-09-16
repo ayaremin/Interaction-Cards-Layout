@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false"
+    android:focusable="false"
+    >
+
+  <View
+      android:id="@+id/root_layout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginTop="?attr/actionBarSize"
+      android:background="@color/primary"
+      />
+
+  <eminayar.com.cardhelper.DisabledScrollView
+      android:id="@+id/scroll"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:fillViewport="true"
+      android:scrollbars="none"
+      >
+
+    <LinearLayout
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/flexible_space_height"
+        >
+
+      <View
+          android:id="@+id/empty_area"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          />
+
+      <LinearLayout
+          android:id="@+id/card_container"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="16dp"
+          android:layout_marginRight="16dp"
+          android:orientation="vertical"
+          />
+    </LinearLayout>
+
+  </eminayar.com.cardhelper.DisabledScrollView>
+
+  <View
+      android:id="@+id/flexible_space"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      />
+
+  <android.support.v7.widget.Toolbar
+      android:id="@+id/toolbar_helper"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/primary"
+      android:minHeight="?attr/actionBarSize"
+      app:popupTheme="@style/Theme.AppCompat.Light.DarkActionBar"
+      app:theme="@style/Toolbar"
+      />
+
+  <RelativeLayout
+      android:id="@+id/fake_toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:alpha="0"
+      >
+
+    <ImageView
+        android:id="@+id/back_button"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentLeft="true"
+        android:padding="@dimen/toolbar_margin_start"
+        android:src="@drawable/helper_back"
+        android:tint="#ffffff"
+        />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/back_button"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:minHeight="?attr/actionBarSize"
+        android:textColor="@android:color/white"
+        android:textSize="26sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="?attr/actionBarSize"
+          />
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/flexible_space_height"
+          />
+    </LinearLayout>
+  </RelativeLayout>
+
+  <View
+      android:id="@+id/scroll_starter"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:layout_gravity="bottom"
+      />
+
+  <View
+      android:id="@+id/top_interceptor"
+      android:layout_width="match_parent"
+      android:layout_height="150dp"
+      android:layout_gravity="top"
+      />
+</FrameLayout>

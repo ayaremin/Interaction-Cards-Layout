@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <declare-styleable name="HelperCardsLayout">
+    <attr name="toolbar_title" format="string"/>
+    <attr name="font" format="string"/>
+    <attr name="overlay_color" format="color"/>
+    <attr name="back_icon" format="reference"/>
+  </declare-styleable>
+</resources>
