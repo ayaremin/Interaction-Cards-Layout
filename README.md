@@ -1,6 +1,5 @@
 # Interaction Cards Layout
 
-[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Panter%20Dialog-brightgreen.svg?style=flat)](http://android-arsenal.com/details/1/4678)
 [![Join the chat at https://gitter.im/panterdialog/Lobby](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/panterdialog/Lobby)
 
 ## Installation
@@ -57,8 +56,6 @@ inflate your cards. It is basic model that contains ; `title, description, image
 HelperCardsLayout layout = (HelperCardsLayout) findViewById(R.id.cardHelper);
 
     ArrayList<CardItem> cardItems = new ArrayList<>();
-
-    layout.setOnCardClickListener(this);
 
     cardItems.add(new CardItem("Short Title With Image",
         "Description this can be some long text, " + "layout" + "will scale itself",
