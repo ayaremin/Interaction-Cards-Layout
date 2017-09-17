@@ -2,7 +2,7 @@
 
 [![Join the chat at https://gitter.im/panterdialog/Lobby](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/panterdialog/Lobby)
 
-![Logo](http://i.imgur.com/a/GL1AM)
+[Imgur](https://i.imgur.com/TFms0d5.png)
 
 ## Installation
 Add this into your build.gradle dependencies section.
