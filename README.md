@@ -2,7 +2,7 @@
 
 [![Join the chat at https://gitter.im/panterdialog/Lobby](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/panterdialog/Lobby)
 
-![Gif](https://i.imgur.com/wrkcSWm.gifv)
+![Gif](https://i.imgur.com/wrkcSWm.gif)
 
 ![Logo](http://i.imgur.com/TFms0d5.png)
 
