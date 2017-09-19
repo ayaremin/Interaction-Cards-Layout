@@ -4,7 +4,7 @@
 
 ![Logo](http://i.imgur.com/TFms0d5.png)
 
-![](https://i.imgur.com/ihOuP8I.gif)
+![](https://i.imgur.com/ybmET2P.gif)
 
 ## Installation
 Add this into your build.gradle dependencies section.
