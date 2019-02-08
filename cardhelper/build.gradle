@@ -3,7 +3,7 @@ apply plugin: 'com.novoda.bintray-release'
 
 publish {
   def groupProjectID = 'com.eminayar.interactioncards'
-  def artifactProjectID = 'cardhelper'
+  def artifactProjectID = 'interaction_cards'
   def publishVersionID = '0.0.0.2'
 
   userOrg = 'kngfrhzs'
