@@ -7,7 +7,7 @@ publish {
   def publishVersionID = '0.0.0.2'
 
   userOrg = 'kngfrhzs'
-  repoName = 'interaction_cards'
+  repoName = 'maven'
   groupId = groupProjectID
   artifactId = artifactProjectID
   publishVersion = publishVersionID

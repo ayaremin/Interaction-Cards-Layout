@@ -28,6 +28,10 @@ allprojects {
       name 'Google'
     }
   }
+  tasks.withType(Javadoc) {
+    options.addStringOption('Xdoclint:none', '-quiet')
+    options.addStringOption('encoding', 'UTF-8')
+  }
 }
 
 task clean(type: Delete) {
