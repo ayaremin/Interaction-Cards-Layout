@@ -35,6 +35,7 @@ your layout.
        android:layout_height="match_parent"
        app:back_icon="@drawable/helper_back"
        app:overlay_color="#000000"
+       app:title_color="#282828"
        app:toolbar_title="Messages"
        />
  
@@ -46,8 +47,8 @@ You can find which attributes you can use on xml below
 | Attribute | Usage | Default Value |
 | --- | --- |--- |
 | app:back_icon | @drawable/your_back_icon | pre defined back icon |
-| app:overlay_color | @drawable/your_back_icon | #000000 |
-| app:title_color | @drawable/your_back_icon | #282828 |
+| app:overlay_color | @color/black | #000000 |
+| app:title_color | @color/dark_gray | #282828 |
 | app:toolbar_title | Any string you can define here | Messages |
 
 Interaction Cards Layout with simply [sample module] (https://github.com/kngfrhzs/Interaction-Cards-Layout/blob/master/app/src/main/java/eminayar/com/helpercards/MainActivity.java).
