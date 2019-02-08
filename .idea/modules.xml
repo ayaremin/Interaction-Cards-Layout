@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/HelperCards.iml" filepath="$PROJECT_DIR$/HelperCards.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Interaction-Cards-Layout.iml" filepath="$PROJECT_DIR$/.idea/Interaction-Cards-Layout.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/cardhelper/cardhelper.iml" filepath="$PROJECT_DIR$/cardhelper/cardhelper.iml" />
     </modules>

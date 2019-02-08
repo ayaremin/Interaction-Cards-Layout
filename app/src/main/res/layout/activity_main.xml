@@ -33,6 +33,7 @@
       android:layout_height="match_parent"
       app:back_icon="@drawable/helper_back"
       app:overlay_color="#000000"
+      app:title_color="#bbffee"
       app:toolbar_title="Messages"
       />
 

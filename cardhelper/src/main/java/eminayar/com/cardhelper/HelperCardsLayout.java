@@ -18,14 +18,16 @@ import android.view.WindowManager;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
-import com.github.ksoichiro.android.observablescrollview.ObservableScrollViewCallbacks;
-import com.github.ksoichiro.android.observablescrollview.ScrollState;
-import com.github.ksoichiro.android.observablescrollview.ScrollUtils;
+
 import com.nineoldandroids.view.ViewHelper;
-import eminayar.com.cardhelper.models.CardItem;
+
 import java.util.List;
+
+import eminayar.com.cardhelper.models.CardItem;
+import eminayar.com.cardhelper.observablescrollview.ObservableScrollViewCallbacks;
+import eminayar.com.cardhelper.observablescrollview.ScrollState;
+import eminayar.com.cardhelper.observablescrollview.ScrollUtils;
 
 /**
  * Created by EminAyar on 3.09.2017.
@@ -52,6 +54,7 @@ public class HelperCardsLayout extends FrameLayout
   private CardClickListener cardClickListener;
   private CardClickLongListener cardClickLongListener;
   private int mOverlayColor;
+  private int mTitleColor;
   private Drawable mBackButtonImage;
   private View rootView;
 
@@ -67,6 +70,7 @@ public class HelperCardsLayout extends FrameLayout
     try {
       mToolbarTitle = ta.getString(R.styleable.HelperCardsLayout_toolbar_title);
       mOverlayColor = ta.getColor(R.styleable.HelperCardsLayout_overlay_color, Color.BLACK);
+      mTitleColor = ta.getColor(R.styleable.HelperCardsLayout_title_color, Color.WHITE);
       mBackButtonImage =
           ta.getDrawable(R.styleable.HelperCardsLayout_back_icon);
     } finally {
@@ -83,6 +87,7 @@ public class HelperCardsLayout extends FrameLayout
     try {
       mToolbarTitle = ta.getString(R.styleable.HelperCardsLayout_toolbar_title);
       mOverlayColor = ta.getColor(R.styleable.HelperCardsLayout_overlay_color, Color.BLACK);
+      mTitleColor = ta.getColor(R.styleable.HelperCardsLayout_title_color, Color.WHITE);
       mBackButtonImage =
           ta.getDrawable(R.styleable.HelperCardsLayout_back_icon);
     } finally {
@@ -135,6 +140,9 @@ public class HelperCardsLayout extends FrameLayout
     // Set background color of overlay view
     mRootBackground.setBackgroundColor(mOverlayColor);
     mToolBarView.setBackgroundColor(mOverlayColor);
+
+    //Set title color
+    mTitleView.setTextColor(mTitleColor);
 
     //Set back button image resource
     ((ImageView)mBackButton).setImageDrawable(mBackButtonImage);

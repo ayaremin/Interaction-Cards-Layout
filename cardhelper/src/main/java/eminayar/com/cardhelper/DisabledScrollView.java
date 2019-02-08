@@ -3,7 +3,8 @@ package eminayar.com.cardhelper;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
-import com.github.ksoichiro.android.observablescrollview.ObservableScrollView;
+
+import eminayar.com.cardhelper.observablescrollview.ObservableScrollView;
 
 public class DisabledScrollView extends ObservableScrollView {
 
