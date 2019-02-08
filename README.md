@@ -9,7 +9,7 @@
 ## Installation
 Add this into your build.gradle dependencies section.
 ```
-compile 'com.eminayar.interactioncards:cardhelper:0.0.0.1'
+compile 'com.eminayar.interactioncards:cardhelper:0.0.0.2'
 ```
 
 ## Sample Usages
@@ -47,6 +47,7 @@ You can find which attributes you can use on xml below
 | --- | --- |--- |
 | app:back_icon | @drawable/your_back_icon | pre defined back icon |
 | app:overlay_color | @drawable/your_back_icon | #000000 |
+| app:title_color | @drawable/your_back_icon | #282828 |
 | app:toolbar_title | Any string you can define here | Messages |
 
 Interaction Cards Layout with simply [sample module] (https://github.com/kngfrhzs/Interaction-Cards-Layout/blob/master/app/src/main/java/eminayar/com/helpercards/MainActivity.java).
